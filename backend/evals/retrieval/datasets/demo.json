@@ -1,0 +1,71 @@
+{
+  "description": "Questions over the demo corpus (demo-docs/manifest.json). 'expected' is the file that answers the question and 'section' a substring of the chunk heading (or 'page N' for PDFs). Unanswerable questions have expected = null: no document answers them, so the right result is 'not found'. Written before any results were seen; don't add questions to make a feature look good (add a new slice instead).",
+  "questions": [
+    {"id": "hb-01", "question": "How many days a week can I work from home?", "expected": "company-handbook.md", "section": "Remote work"},
+    {"id": "hb-02", "question": "Can I work from another country for a few weeks?", "expected": "company-handbook.md", "section": "Remote work"},
+    {"id": "hb-03", "question": "How many vacation days do I get per year?", "expected": "company-handbook.md", "section": "Annual leave"},
+    {"id": "hb-04", "question": "Can unused holiday be moved to next year?", "expected": "company-handbook.md", "section": "Annual leave"},
+    {"id": "hb-05", "question": "When do I need a doctor's note when I'm sick?", "expected": "company-handbook.md", "section": "Sick leave"},
+    {"id": "hb-06", "question": "How long is paid maternity leave?", "expected": "company-handbook.md", "section": "Parental leave"},
+    {"id": "hb-07", "question": "What is the training budget per employee?", "expected": "company-handbook.md", "section": "Learning"},
+    {"id": "hb-08", "question": "Is there money to buy an office chair for home?", "expected": "company-handbook.md", "section": "Equipment"},
+    {"id": "hb-09", "question": "What are the core hours I must be available?", "expected": "company-handbook.md", "section": "Working hours"},
+    {"id": "hb-10", "question": "How do I report harassment anonymously?", "expected": "company-handbook.md", "section": "Code of conduct"},
+
+    {"id": "sec-01", "question": "How long must my password be?", "expected": "information-security-policy.html", "section": "Passwords"},
+    {"id": "sec-02", "question": "Are SMS codes allowed for two-factor login?", "expected": "information-security-policy.html", "section": "Multi-factor"},
+    {"id": "sec-03", "question": "How quickly must I install OS updates on my laptop?", "expected": "information-security-policy.html", "section": "Laptops"},
+    {"id": "sec-04", "question": "Who is allowed to see restricted data like salaries?", "expected": "information-security-policy.html", "section": "Data classification"},
+    {"id": "sec-05", "question": "I clicked a phishing link, how fast do I have to report it?", "expected": "information-security-policy.html", "section": "Reporting"},
+    {"id": "sec-06", "question": "Can I charge my work phone at a USB port at the airport?", "expected": "information-security-policy.html", "section": "public places"},
+    {"id": "sec-07", "question": "What should I do with a suspicious email?", "expected": "information-security-policy.html", "section": "Phishing"},
+
+    {"id": "tr-01", "question": "Can I fly business class on a long-haul flight?", "expected": "travel-and-expense-policy.docx", "section": "Booking travel"},
+    {"id": "tr-02", "question": "What is the maximum hotel price per night in London?", "expected": "travel-and-expense-policy.docx", "section": "Hotels"},
+    {"id": "tr-03", "question": "How much is the daily food allowance abroad?", "expected": "travel-and-expense-policy.docx", "section": "Meals"},
+    {"id": "tr-04", "question": "What is the deadline for submitting expense claims?", "expected": "travel-and-expense-policy.docx", "section": "Submitting"},
+    {"id": "tr-05", "question": "What is the mileage rate for using my own car?", "expected": "travel-and-expense-policy.docx", "section": "Submitting"},
+    {"id": "tr-06", "question": "Who approves an expense claim of 2,000 EUR?", "expected": "travel-and-expense-policy.docx", "section": "Approval limits"},
+    {"id": "tr-07", "question": "Will the company pay my parking ticket?", "expected": "travel-and-expense-policy.docx", "section": "Not reimbursed"},
+
+    {"id": "sal-01", "question": "What is the salary range for a senior engineer?", "expected": "salary-bands-2026.md", "section": "Engineering bands"},
+    {"id": "sal-02", "question": "How much does a staff engineer earn at most?", "expected": "salary-bands-2026.md", "section": "Engineering bands"},
+    {"id": "sal-03", "question": "What is the merit increase budget this year?", "expected": "salary-bands-2026.md", "section": "salary review"},
+    {"id": "sal-04", "question": "When do promotions take effect?", "expected": "salary-bands-2026.md", "section": "salary review"},
+    {"id": "sal-05", "question": "Which levels get a bonus?", "expected": "salary-bands-2026.md", "section": "Bonus"},
+    {"id": "sal-06", "question": "What base salary do account executives get?", "expected": "salary-bands-2026.md", "section": "Sales bands"},
+
+    {"id": "oc-01", "question": "When is the weekly on-call handover?", "expected": "oncall-handbook.md", "section": "Rotation"},
+    {"id": "oc-02", "question": "How fast must I acknowledge a page?", "expected": "oncall-handbook.md", "section": "Paging"},
+    {"id": "oc-03", "question": "What counts as a SEV1 incident?", "expected": "oncall-handbook.md", "section": "Severity"},
+    {"id": "oc-04", "question": "What do I get paid for an on-call week?", "expected": "oncall-handbook.md", "section": "Compensation"},
+    {"id": "oc-05", "question": "Do I get time off after being paged on a weekend?", "expected": "oncall-handbook.md", "section": "Compensation"},
+    {"id": "oc-06", "question": "When is a post-mortem required?", "expected": "oncall-handbook.md", "section": "After an incident"},
+
+    {"id": "rb-01", "question": "How do I fail over the main Postgres database?", "expected": "platform-incident-runbook.pdf", "section": "page 1"},
+    {"id": "rb-02", "question": "A Kubernetes node is running out of memory, what do I do?", "expected": "platform-incident-runbook.pdf", "section": "page 2"},
+    {"id": "rb-03", "question": "How do I roll back a bad deployment?", "expected": "platform-incident-runbook.pdf", "section": "page 3"},
+    {"id": "rb-04", "question": "How often do we update the status page during an outage?", "expected": "platform-incident-runbook.pdf", "section": "page 4"},
+
+    {"id": "bud-01", "question": "What is the revenue forecast for Q3?", "expected": "q3-budget-forecast.html", "section": "Summary"},
+    {"id": "bud-02", "question": "How much will engineering spend in Q3?", "expected": "q3-budget-forecast.html", "section": "Expenses by department"},
+    {"id": "bud-03", "question": "How many people are we hiring this quarter?", "expected": "q3-budget-forecast.html", "section": "Hiring"},
+    {"id": "bud-04", "question": "What is the target for reducing cloud costs?", "expected": "q3-budget-forecast.html", "section": "Cloud"},
+    {"id": "bud-05", "question": "How does the dollar exchange rate affect our revenue?", "expected": "q3-budget-forecast.html", "section": "Risks"},
+
+    {"id": "pr-01", "question": "Above what amount do I need a purchase order?", "expected": "procurement-process.md", "section": "purchase order"},
+    {"id": "pr-02", "question": "Who approves a 30,000 EUR purchase order?", "expected": "procurement-process.md", "section": "Approving"},
+    {"id": "pr-03", "question": "How do we check a new supplier's bank details?", "expected": "procurement-process.md", "section": "supplier"},
+    {"id": "pr-04", "question": "What are our standard payment terms for invoices?", "expected": "procurement-process.md", "section": "Payment terms"},
+    {"id": "pr-05", "question": "Can I buy a software subscription with my own credit card?", "expected": "procurement-process.md", "section": "Software"},
+
+    {"id": "none-01", "question": "What is the office dress code?", "expected": null},
+    {"id": "none-02", "question": "How do I book a meeting room?", "expected": null},
+    {"id": "none-03", "question": "What is on the cafeteria menu today?", "expected": null},
+    {"id": "none-04", "question": "When is the company summer party?", "expected": null},
+    {"id": "none-05", "question": "Can I bring my dog to the office?", "expected": null},
+    {"id": "none-06", "question": "Who is the CEO of Acme?", "expected": null},
+    {"id": "none-07", "question": "What is the Wi-Fi password for guests?", "expected": null},
+    {"id": "none-08", "question": "How do I get a parking space at the office?", "expected": null}
+  ]
+}

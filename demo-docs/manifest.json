@@ -1,0 +1,53 @@
+{
+  "description": "Demo corpus. Who uploads each file and who it is shared with. Used by scripts/seed-demo.ps1, the retrieval eval and the permission tests.",
+  "documents": [
+    {
+      "file": "company-handbook.md",
+      "title": "Company handbook",
+      "uploader": "alice",
+      "share_with": ["everyone"]
+    },
+    {
+      "file": "information-security-policy.html",
+      "title": "Information security policy",
+      "uploader": "alice",
+      "share_with": ["everyone"]
+    },
+    {
+      "file": "travel-and-expense-policy.docx",
+      "title": "Travel and expense policy",
+      "uploader": "alice",
+      "share_with": ["everyone"]
+    },
+    {
+      "file": "salary-bands-2026.md",
+      "title": "Salary bands 2026",
+      "uploader": "alice",
+      "share_with": ["group:/hr"]
+    },
+    {
+      "file": "oncall-handbook.md",
+      "title": "Engineering on-call handbook",
+      "uploader": "bob",
+      "share_with": ["group:/engineering"]
+    },
+    {
+      "file": "platform-incident-runbook.pdf",
+      "title": "Platform incident runbook",
+      "uploader": "bob",
+      "share_with": ["group:/engineering/platform"]
+    },
+    {
+      "file": "q3-budget-forecast.html",
+      "title": "Q3 budget forecast",
+      "uploader": "carol",
+      "share_with": ["group:/finance"]
+    },
+    {
+      "file": "procurement-process.md",
+      "title": "Procurement process",
+      "uploader": "carol",
+      "share_with": ["group:/finance"]
+    }
+  ]
+}
